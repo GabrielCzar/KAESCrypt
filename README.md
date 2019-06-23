@@ -1,4 +1,4 @@
-# KAESCrypt [![Build Status](https://travis-ci.com/GabrielCzar/KAESCrypt.svg?branch=master)](https://travis-ci.com/GabrielCzar/KAESCrypt)
+# KAESCrypt [![Build Status](https://travis-ci.com/GabrielCzar/KAESCrypt.svg?branch=master)](https://travis-ci.com/GabrielCzar/KAESCrypt) [![codecov](https://codecov.io/gh/GabrielCzar/KAESCrypt/branch/master/graph/badge.svg)](https://codecov.io/gh/GabrielCzar/KAESCrypt)
 String extension to encrypting & decrypting strings using AES (Advanced Encryption Standard).
 
 * AES-256 

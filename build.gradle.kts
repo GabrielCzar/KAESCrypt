@@ -29,13 +29,14 @@ tasks {
             sourceSets(it.sourceSets["main"])
         }
 
+        classDirectories.setFrom(files(sourceSets["main"].output))
+        sourceDirectories.setFrom(files(sourceSets["main"].allSource.srcDirs))
+
         reports {
-            sourceDirectories =  files(sourceSets["main"].allSource.srcDirs)
-            classDirectories =  files(sourceSets["main"].output)
-            xml.isEnabled = true
             xml.destination = File("$buildDir/reports/jacoco/report.xml")
             html.isEnabled = false
             csv.isEnabled = false
+            xml.isEnabled = true
         }
     }
 }
