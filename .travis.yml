@@ -32,4 +32,5 @@ deploy:
   on.repo: GabrielCzar/KAESCrypt
   skip_cleanup: true
   on.tags: true
-  on.branch: master
+  on:
+    branch: master
