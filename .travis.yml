@@ -41,4 +41,3 @@ deploy:
   on:
     repo: GabrielCzar/KAESCrypt
     branch: master
-    tags: true
