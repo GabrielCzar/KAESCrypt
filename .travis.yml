@@ -36,7 +36,7 @@ deploy:
   provider: releases
   api_key:
     secure: N1m9IcPsXbiXmpL/PPqi8f+7MQVaIiUR0v8/pCNhyAtjYNUinYG8CvXfVCf/Q4yX/CATNYMwhQw/czBJ2a6q2/7Xzwo5N8Fb+wWq/nzTuzISGqdyyO2M2/eSFbsbWIpVOGi58Lval88OvF5+Lc0Km4VuZbGuMKASDFiMQpBowSG2BUqae8JCeu1TIbESn4qTa1FpBOnwObcPMFogMdVURAZmXlJZwjdBpmEKwXnH+eIeg5AGtVjjtbIoktH0X0BVf7sJQdRElaxrihutmo2CFqsXa7V33fxwp+q5oEIYsbIMdbnqB+rON5TkQGL3w6rIU8mwFQGLGmquPQSIJgMPwDNAacVscEg4yqjY/qdvjyuxjfez4y2v0baPt7etWKW1rWLf7ypzYwOsGw9f/cmAe593207cxnHLFA9ysrbOAM+wFPp8yn94WYY0B/oHV224qJydSOIMmK7Xi6q6pRJC9IWMvwREBKlSHS/mT8CbeO4RxgMta/DdhhhmNWJp+iAdebtL4C+XbYb5g0CP2HQmZGyn+dmHvT5SjpZsCZPV5yo1CftY+mHBChIG8+r2GQ1/7uPYJEnrp/dSvwpzq1M2zsc7Y6QWrvTwl12j1Y/urR6EfP5YeNmDwy/PM9Mc6whvEWSGYRH7Usj2XsSL0SCMes52OZXwKXuwSuDNttmZWxA=
-  file: $HOME/build/libs/*
+  file: /build/libs/*
   skip_cleanup: true
   on:
     repo: GabrielCzar/KAESCrypt
