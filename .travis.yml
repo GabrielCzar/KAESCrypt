@@ -24,6 +24,14 @@ cache.directories:
   - $HOME/.gradle/caches/
   - $HOME/.gradle/wrapper/
 
+before_deploy:
+  - export PROJECT_VERSION=$(cat build.gradle.kts | sed -e '/version = /!d' | grep -Eo "[0-9]*\.[0-9]*")
+  - export TRAVIS_TAG="$PROJECT_VERSION.$TRAVIS_BUILD_NUMBER"
+  - echo "$TRAVIS_TAG" "$TRAVIS_COMMIT"
+  - git config --local user.name "$USER_NAME"
+  - git config --local user.email "$USER_EMAIL"
+  - git tag "$TRAVIS_TAG" "$TRAVIS_COMMIT"
+
 deploy:
   provider: releases
   api_key:
