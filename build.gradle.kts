@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.3.21"
     jacoco
+    `maven-publish`
 }
 
 group = "io.gabrielczar"
@@ -40,3 +41,25 @@ tasks {
         }
     }
 }
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+
+            pom {
+                name.set("KAESCrypt")
+                url.set("https://github.com/GabrielCzar/KAESCrypt")
+                description.set("String extension to encrypting & decrypting strings using AES")
+
+                licenses {
+                    license {
+                        name.set("MIT License")
+                        url.set("https://github.com/GabrielCzar/KAESCrypt/blob/master/LICENSE")
+                    }
+                }
+            }
+        }
+    }
+}
+
